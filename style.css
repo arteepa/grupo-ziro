@@ -1,14 +1,14 @@
 /*!
- * Start Bootstrap - Clean Blog v5.0.8 (https://startbootstrap.com/template-overviews/clean-blog)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
- */
+* Start Bootstrap - Clean Blog v5.0.8 (https://startbootstrap.com/template-overviews/clean-blog)
+* Copyright 2013-2019 Start Bootstrap
+* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
+*/
 
 /* Main Blue Color: #05445F */
 
 body {
   font-size: 20px;
-  color: #212529;
+  color: #b1d1df;
   font-family: 'Lora', 'Times New Roman', serif;
   background-color: #eef6fa;
 }
@@ -92,9 +92,9 @@ img::-moz-selection {
 
 #mainNav {
   position: absolute;
-  border-bottom: 1px solid #e9ecef;
-  background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: right;
+  color:#fff;
 }
 
 #mainNav .navbar-brand {
@@ -107,7 +107,7 @@ img::-moz-selection {
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #343a40;
+  color: #fff;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -115,6 +115,7 @@ img::-moz-selection {
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color:#fff;
 }
 
 @media only screen and (min-width: 992px) {
@@ -196,6 +197,10 @@ header.masthead .site-heading {
   color: white;
 }
 
+.main-logo {
+  padding:0 20px;
+}
+
 @media only screen and (min-width: 768px) {
   header.masthead .page-heading,
   header.masthead .post-heading,
@@ -209,7 +214,6 @@ header.masthead .site-heading {
 
   header.masthead .login-heading {
     padding: 80px 20% 150px;
-    color: #eaeaea;
   }
 }
 
@@ -466,19 +470,52 @@ label {
   color: #4a4a4a;
 }
 
-.pills {
-  margin-top:30px
+@media only screen and (max-width: 768px) {
+
+  .mision {
+    padding:0 30px;
+  }
+
+  .clients-padding {
+    padding-top:100px;
+  }
+
+  #loginForm {
+    margin: 40px 40px;
+  }
+
 }
 
+
+
 .pill {
-  display: inline;
+  display: inline-block;
   background-color: #fff;
   color: #05445F;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin:0 5px;
   border-radius: 50px;
   padding:6px 14px;
-  font-size: 18px;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  margin:50px 0 60px !important;
+  color:#b1d1df;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .pill {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+  .subtext {
+    margin:30px 0 48px !important;
+  }
+
 }
 
 .mx-auto {
@@ -498,4 +535,23 @@ label {
 .nav-link {
   line-height: 50px;
   margin-right:20px;
+}
+
+.pill i {
+  margin-right: 4px;
+}
+
+.form-control {
+  background-color: #ecf3f6;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height:50px;
+  border-radius: 12px;
+}
+
+input::placeholder {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.login-btn {
+  border-radius: 12px;
 }
